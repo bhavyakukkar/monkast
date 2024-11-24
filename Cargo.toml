@@ -1,0 +1,18 @@
+[package]
+name = "monkast"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.18", features = ["derive"] }
+tracing-subscriber = "0.3.18"
+
+[dependencies.kast-ast]
+# path = "../../kast/kast/crates/ast"
+git = "https://github.com/kast-lang/kast.git"
+rev = "683b0a6eed23925967096b6852e06118ede1ffcd"
+
+[dependencies.kast-util]
+# path = "../../kast/kast/crates/util"
+git = "https://github.com/kast-lang/kast.git"
+rev = "683b0a6eed23925967096b6852e06118ede1ffcd"
